@@ -130,6 +130,7 @@
     <Compile Include="Global.asax.cs">
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
+    <Compile Include="HelperClasses\EntreeManager.cs" />
     <Compile Include="Models\Entree.cs" />
     <Compile Include="Models\Ingredient.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
