@@ -1,4 +1,5 @@
 ﻿using DinnerApp.HelperClasses;
+using System;
 using System.Linq;
 using System.Web.Mvc;
 
@@ -21,7 +22,7 @@ namespace DinnerApp.Controllers
                 var entree = EntreeManager.GetAll().First(e => e.ID == id);
                     return View(entree);
             }
-            catch
+            catch(Exception)
             {
                 TempData["Error Message"] = "No Entree with Id " + id.ToString() + "exists";
                 return RedirectToAction ("Index");
