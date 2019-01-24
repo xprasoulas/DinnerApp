@@ -14,7 +14,7 @@ namespace DinnerApp.Controllers
             return View(entree);
         }
 
-        [HttpPost]
+        [HttpGet]
         public ActionResult Details(int id)
         {
             try
